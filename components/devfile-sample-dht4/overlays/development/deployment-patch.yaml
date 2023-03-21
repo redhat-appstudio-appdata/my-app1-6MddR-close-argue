@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dht4
+  namespace: ktsao-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:74bfc3d5486610350f5361c657efd75b3d2b82ced0a0832348756d1ef4556133
+        name: my-nodejs
+        resources: {}
+status: {}
